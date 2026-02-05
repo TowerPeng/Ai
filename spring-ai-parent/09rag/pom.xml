@@ -11,6 +11,14 @@
     <artifactId>09rag</artifactId>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-advisors-vector-store</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-vector-store</artifactId>
+        </dependency>
         <!--百炼-->
         <dependency>
             <groupId>com.alibaba.cloud.ai</groupId>

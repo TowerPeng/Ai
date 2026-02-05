@@ -30,6 +30,20 @@
 
     <build>
         <plugins>
+            <!-- 使用最新版本编译插件支持 JDK 17 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version> <!-- 或 3.12.1 -->
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                    <release>17</release> <!-- 使用 release 替代 source/target -->
+                    <parameters>true</parameters> <!-- 保留参数名用于反射 -->
+                    <compilerArgs>
+                        <arg>-Xlint:all</arg>
+                    </compilerArgs>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>

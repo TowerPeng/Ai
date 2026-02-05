@@ -21,7 +21,7 @@ public class FlightBookingService {
 	}
 
 	private void initDemoData() {
-		List<String> names = List.of("徐庶", "诸葛", "百里", "楼兰", "庄周");
+		List<String> names = List.of("徐庶", "诸葛", "百里", "楼兰", "庄周","彭涛");
 		List<String> airportCodes = List.of("北京", "上海", "广州", "深圳", "杭州", "南京", "青岛", "成都", "武汉", "西安", "重庆", "大连",
 				"天津");
 		Random random = new Random();
@@ -29,7 +29,7 @@ public class FlightBookingService {
 		var customers = new ArrayList<Customer>();
 		var bookings = new ArrayList<Booking>();
 
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < 6; i++) {
 			String name = names.get(i);
 			String from = airportCodes.get(random.nextInt(airportCodes.size()));
 			String to = airportCodes.get(random.nextInt(airportCodes.size()));
